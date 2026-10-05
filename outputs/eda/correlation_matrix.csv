@@ -1,0 +1,7 @@
+,Study_Hours_Week,LMS_Hours_Week,Attendance_Pct,Assignment_Score,Mid_Grade,Final_Grade
+Study_Hours_Week,1.0,0.776,0.49,0.783,0.58,0.734
+LMS_Hours_Week,0.776,1.0,0.391,0.698,0.522,0.737
+Attendance_Pct,0.49,0.391,1.0,0.382,0.426,0.478
+Assignment_Score,0.783,0.698,0.382,1.0,0.729,0.801
+Mid_Grade,0.58,0.522,0.426,0.729,1.0,0.633
+Final_Grade,0.734,0.737,0.478,0.801,0.633,1.0

@@ -1,0 +1,43 @@
+project:
+  name: "Student Academic Performance Analytics"
+  version: "1.0.0"
+  description: "DevSecMLOps-enabled student risk prediction and analytics system"
+
+security:
+  sast:
+    tool: "bandit"
+    severity_level: "medium"
+    confidence_level: "medium"
+    excluded_paths: ["tests", ".venv"]
+  sca:
+    tool: "pip-audit"
+    ignore_vulns: []
+  data_protection:
+    verify_sha256: true
+    mask_pii: true
+    pii_columns: ["Student_ID"]
+
+mlops:
+  data:
+    raw_path: "data/raw/student_performance_raw.csv"
+    processed_path: "data/processed/student_performance_clean.csv"
+    features:
+      - "Study_Hours_Week"
+      - "LMS_Hours_Week"
+      - "Attendance_Pct"
+      - "Assignment_Score"
+      - "Mid_Grade"
+      - "Year"
+    target: "Pass_Fail"
+  model:
+    algorithm: "LogisticRegression"
+    hyperparameters:
+      max_iter: 1000
+      random_state: 42
+      C: 1.0
+    save_path: "models/model.pkl"
+  gates:
+    min_accuracy: 0.80
+    min_recall: 0.85
+    min_roc_auc: 0.85
+    max_cv_std: 0.05

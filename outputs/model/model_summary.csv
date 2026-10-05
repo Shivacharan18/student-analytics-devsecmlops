@@ -1,0 +1,6 @@
+Metric,Logistic Regression (%),Decision Tree (%)
+Accuracy,81.82,78.47
+Precision,86.67,88.98
+Recall,85.40,76.64
+F1-Score,86.03,82.35
+ROC-AUC,88.80,85.23

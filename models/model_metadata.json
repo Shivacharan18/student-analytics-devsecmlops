@@ -1,0 +1,22 @@
+{
+  "saved_at": "2026-10-05T04:16:19.661774+00:00",
+  "sha256": "c44c5e76128e65b04738e406d39e8f067a8c289c7aa71995d9013c291679be50",
+  "features": [
+    "Study_Hours_Week",
+    "LMS_Hours_Week",
+    "Attendance_Pct",
+    "Assignment_Score",
+    "Mid_Grade",
+    "Year"
+  ],
+  "target": "Pass_Fail",
+  "custom_metadata": {
+    "accuracy": 0.8182,
+    "precision": 0.8667,
+    "recall": 0.854,
+    "f1_score": 0.8603,
+    "roc_auc": 0.888,
+    "cv_accuracy_mean": 0.824,
+    "test_samples": 209
+  }
+}
